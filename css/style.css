@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cousine", monospace;
+}
+/* navbar */
+.navbar_hb {
+  /* background-color: #6C3428; */
+  /* background-color: #ba704f; */
+  /* background-color: #dfa878; */
+  background-color: #cee6f3;
+}
+.nav_link_hb {
+  color: black;
+}
+/* .nav_link_hb_menu {
+  border-bottom: 5px solid #6c3428;
+} */
+.nav_link_hb:hover {
+  color: #6c3428;
+}
+
+/* sub_navbar */
+.sub_navlink_hb {
+  color: black;
+}
+.sub_navlink_hb:hover {
+  color: #6c3428;
+}
+/* search_bar */
+.search_btn_hb:hover {
+  background-color: #6c3428;
+  border-color: #6c3428;
+}
+
+/* account_page */
+.sign_in_header {
+  color: #6c3428;
+}
+.upper_div_hb {
+  background-color: #cee6f3;
+  width: 542px;
+}
+.create_account_btn_hb,
+.sign_in_btn_hb {
+  background-color: #6c3428;
+  color: white;
+}
+.forget_psw_hb,
+.rewards_hb {
+  color: #6c3428;
+}
