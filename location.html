@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>We are here! ~ Heavenly Bliss Location Page</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -66,7 +70,7 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content pe-3">
               <li class="nav-item">
                 <a class="nav-link nav_link_hb fw-bolder ms-3" href="menu.html"
                   >MENU</a
@@ -80,6 +84,18 @@
                 >
               </li>
             </ul>
+            <a
+              class="navbar-brand d-none d-md-block flex-grow-1"
+              href="index.html"
+            >
+              <img
+                src="image/HB_Logo2.1-removebg-preview.png"
+                alt="Bootstrap"
+                class="mx-auto d-block"
+                width="200"
+                height="40"
+              />
+            </a>
             <ul class="navbar-nav d-flex">
               <li class="nav-item">
                 <a class="nav-link nav_link_hb fw-bolder mx-3" href="#"
@@ -100,10 +116,26 @@
 
     <!-- content start -->
     <div class="container">
+      <!-- about us -->
       <div class="mt-3 border-bottom pb-3">
-        <h2 class="text-center about_h_hb fw-bold">ABOUT</h2>
-        <h4 class="text-center">
-          <b>HEAVENLY BLISS</b>: Where Coffee Meets Confectionery Delights
+        <h2 class="text-center about_h_hb fw-bold">ABOUT US</h2>
+        <a
+          class="navbar-brand my-3 d-block animate__animated animate__bounce"
+          href="index.html"
+        >
+          <img
+            src="image/HB_Logo2.1.png"
+            alt="Bootstrap"
+            class="mx-auto d-block"
+            width="200"
+            height="60"
+          />
+        </a>
+        <h4 class="text-center mt-4">
+          <b>HEAVENLY BLISS</b>:
+          <span class="animate__animated animate__flash"
+            >Where Coffee Meets Confectionery Delights</span
+          >
         </h4>
         <div class="text-center">
           <p>
@@ -116,34 +148,211 @@
           </p>
         </div>
       </div>
+      <!-- location -->
       <div class="mt-3 border-bottom pb-3">
         <h2 class="text-center about_h_hb fw-bold">
           <i class="fa-solid fa-map-location-dot"></i> LOCATION
         </h2>
-        <p class="text-center">
+        <p class="text-center mt-4">
           See our shop location below. We can't wait to see you at Heavenly
           Bliss.
         </p>
-
         <div class="text-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d573.2216439786284!2d97.04225208088364!3d20.78371249065463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1691166057510!5m2!1sen!2smm"
-            width="900"
-            height="450"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            class="d-block w-100"
+            style="height: 50vh"
           ></iframe>
         </div>
       </div>
+      <!-- feedback -->
       <div class="mt-3 border-bottom pb-3">
-        <h2 class="text-center about_h_hb fw-bold">FOUNDER</h2>
+        <h2 class="text-center about_h_hb fw-bold">Feedback & FAQs</h2>
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-12 col-md-6">
+              <h4>Looking for answers?</h4>
+              <!-- search bar -->
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control focus-ring focus-ring-light me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn search_btn_hb btn-outline-dark"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+              <!-- question -->
+              <ul class="list-group list-group-flush mt-3 border-bottom">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-end">
+                    <span>Where is your coffee roasted?</span>
+                    <a
+                      class="question_hb"
+                      data-bs-toggle="collapse"
+                      href="#faq_q1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div class="collapse" id="faq_q1">
+                    <div class="mt-1">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-end">
+                    <span>Do you have a physical cafe?</span>
+                    <a
+                      class="question_hb"
+                      data-bs-toggle="collapse"
+                      href="#faq_q2"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div class="collapse" id="faq_q2">
+                    <div class="mt-1">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-end">
+                    <span>How strong is your signature coffee?</span>
+                    <a
+                      class="question_hb"
+                      data-bs-toggle="collapse"
+                      href="#faq_q3"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div class="collapse" id="faq_q3">
+                    <div class="mt-1">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-end">
+                    <span>Do you ship internationally?</span>
+                    <a
+                      class="question_hb"
+                      data-bs-toggle="collapse"
+                      href="#faq_q4"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div class="collapse" id="faq_q4">
+                    <div class="mt-1">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-between mt-2">
+                <p class="my-auto ms-3">Can't find what you've looking for?</p>
+                <a
+                  class="question_btn_hb btn btn-dark"
+                  data-bs-toggle="collapse"
+                  href="#faq_add"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Ask a question
+                </a>
+              </div>
+              <div class="collapse" id="faq_add">
+                <div class="mt-1 text-center">
+                  <textarea
+                    class="form-control focus-ring focus-ring-light"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                  <button type="button" class="btn btn-dark mt-2">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
       </div>
-      <div class="location_hb">
-        <h2></h2>
+      <!-- contact us -->
+      <div class="mt-3 border-bottom pb-3">
+        <h2 class="text-center about_h_hb fw-bold">CONTACT US</h2>
+        <p class="text-center fw-bold mt-4">
+          <i class="fa-solid fa-phone"></i> Hotline : +959987654321
+        </p>
+        <p class="text-center fw-bold">
+          <i class="fa-solid fa-envelope"></i> Email : heavenlybliss@gmail.com
+        </p>
+        <ul class="contact_ul_hb d-flex justify-content-center">
+          <li>
+            <a href="#" class="contact_li_hb me-3"
+              ><i class="fa-brands fa-facebook fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="contact_li_hb me-3"
+              ><i class="fa-brands fa-twitter fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="contact_li_hb me-3"
+              ><i class="fa-brands fa-square-instagram fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" class="contact_li_hb me-4"
+              ><i class="fa-brands fa-youtube fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
       </div>
     </div>
     <!-- content end -->
+    <div class="container-fluid">
+      <div class="row border-top py-1">
+        <div class="col text-center">
+          <span>&copy; 2023 Heavenly Bliss. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

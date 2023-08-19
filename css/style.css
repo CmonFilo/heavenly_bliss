@@ -23,7 +23,13 @@
   color: #6c3428;
 }
 
-/* sub_navbar */
+/* menu page sub_navbar */
+.sub_navbar_hb {
+  background-color: white;
+  position: sticky;
+  z-index: 3;
+  top: 0px;
+}
 .sub_navlink_hb {
   color: black;
 }
@@ -35,21 +41,46 @@
   background-color: #6c3428;
   border-color: #6c3428;
 }
-
+.menu_img:hover{
+  transform: scale(1.05);
+}
 /* account_page */
 .sign_in_header {
   color: #6c3428;
 }
 .upper_div_hb {
   background-color: #cee6f3;
-  width: 542px;
 }
 .create_account_btn_hb,
-.sign_in_btn_hb {
+.sign_in_btn_hb,
+.go_acc_pg_btnAtreward_hb {
   background-color: #6c3428;
   color: white;
 }
 .forget_psw_hb,
 .rewards_hb {
   color: #6c3428;
+}
+
+.contact_ul_hb,
+.footer_ul_hb {
+  list-style-type: none;
+}
+
+.contact_li_hb,
+.footer_li_hb {
+  color: black;
+}
+
+.reward_text_hb {
+  align-items: center;
+}
+
+.promo_bg_hb {
+  background-color: white;
+}
+
+.question_hb {
+  color: black;
+  margin-left: auto;
 }

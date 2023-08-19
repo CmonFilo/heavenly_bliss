@@ -66,7 +66,7 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content pe-3">
               <li class="nav-item">
                 <a class="nav-link nav_link_hb fw-bolder ms-3" href="#">MENU</a>
               </li>
@@ -78,6 +78,18 @@
                 >
               </li>
             </ul>
+            <a
+              class="navbar-brand d-none d-md-block flex-grow-1"
+              href="index.html"
+            >
+              <img
+                src="image/HB_Logo2.1-removebg-preview.png"
+                alt="Bootstrap"
+                class="mx-auto d-block"
+                width="200"
+                height="40"
+              />
+            </a>
             <ul class="navbar-nav d-flex">
               <li class="nav-item">
                 <a
@@ -99,17 +111,29 @@
     <!-- navbar end -->
 
     <!-- sub_navbar start -->
-    <nav class="navbar d-none d-md-block sticky-top shadow-sm">
+    <nav
+      class="navbar sub_navbar_hb d-none d-md-block sticky-top shadow-sm"
+      id="navbar-example2"
+    >
       <div class="container">
         <ul class="nav nav-underline">
           <li class="nav-item">
-            <a class="nav-link sub_navlink_hb" href="#">All Products</a>
+            <a class="nav-link sub_navlink_hb" href="#hot_drinks_hb"
+              >Hot Drinks</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link sub_navlink_hb ms-3" href="#">Drinks</a>
+            <a class="nav-link sub_navlink_hb ms-3" href="#cold_drinks_hb"
+              >Cold Drinks</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link sub_navlink_hb ms-3" href="#">Food</a>
+            <a class="nav-link sub_navlink_hb ms-3" href="#food_hb">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link sub_navlink_hb ms-3" href="#dessert_hb"
+              >Dessert</a
+            >
           </li>
         </ul>
         <!-- search bar -->
@@ -130,8 +154,547 @@
     <!-- sub_navbar end -->
 
     <!-- content start -->
-    <main class="container my-3"></main>
+    <main
+      class="container"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <div class="row border-bottom py-3" id="hot_drinks_hb">
+        <div class="col-12 mb-3">
+          <h2 class="fw-bold my-auto">Hot Drinks</h2>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Americano.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  3.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Americano
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Cafe Latte.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  4.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Cafe Latte
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Cappuccino.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  3.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Cappuccino
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Double Espresso.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  2.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Double Espresso
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/espresso.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  2.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Espresso
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Flat White.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  3.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Flat White
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Frappuccino.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  4.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Frappuccino
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Macchiato.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  3.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Macchiato
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-bottom py-3" id="cold_drinks_hb">
+        <div class="col-12 mb-3">
+          <h2 class="fw-bold my-auto">Cold Drinks</h2>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Affogato.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  6.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Affogato
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Cappuccino_cold.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  5.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Cappuccino
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Frappuccino_cold.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  5.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Frappuccino
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Macchiato_cold.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  4.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Macchiato
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-bottom py-3" id="food_hb">
+        <div class="col-12 mb-3">
+          <h2 class="fw-bold my-auto">Food</h2>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/American_Breakfast.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  6.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  American Breakfast
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Burger.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  5.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Burger
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Croissant.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  5.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Croissant
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Sandwichs.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  4.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Sandwich
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-bottom py-3" id="dessert_hb">
+        <div class="col-12 mb-3">
+          <h2 class="fw-bold my-auto">Dessert</h2>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Brownies.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  6.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Brownies
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Chia Pudding.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  5.00 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Chia Pudding
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/French Fries.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  5.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  French Fries
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 text-center my-3">
+            <div class="card menu_img">
+              <img
+                src="image/coffee_menu/Tiramisu.jpg"
+                alt=""
+                class="rounded card-img"
+              />
+              <div class="card-img-overlay">
+                <span
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  4.50 $
+                </span>
+                <span
+                  class="position-absolute top-100 start-50 translate-middle badge rounded-pill bg-dark"
+                >
+                  Tiramisu
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- content end -->
+
+    <!-- footer start -->
+    <div class="border-top pt-3">
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="footer-header">
+              <h4 class="footer-header-2 fw-bold text-center">
+                Term of Service
+              </h4>
+            </div>
+            <ul class="footer_ul_hb text-center p-0 mt-3">
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Term of Service</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer-header">
+              <h4 class="footer-header-2 fw-bold text-center">
+                Help & Feedback
+              </h4>
+            </div>
+            <ul class="footer_ul_hb text-center p-0 mt-3">
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Feedback</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb">FAQs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4 class="footer-header-2 fw-bold text-center">Contact Us</h4>
+            <ul class="contact_ul_hb d-flex justify-content-center mt-4">
+              <li>
+                <a href="" class="contact_li_hb ms-3 me-2"
+                  ><i class="fa-brands fa-facebook fa-2xl"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="contact_li_hb me-2"
+                  ><i class="fa-brands fa-twitter fa-2xl"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="contact_li_hb me-2"
+                  ><i class="fa-brands fa-square-instagram fa-2xl"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="contact_li_hb me-5"
+                  ><i class="fa-brands fa-youtube fa-2xl"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="container-fluid">
+      <div class="row border-top py-1">
+        <div class="col text-center">
+          <span>&copy; 2023 Heavenly Bliss. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="image/1-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="css/animate.css" rel="stylesheet" />
+    <title>Heavenly Bliss's Admin Page</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- side bar start -->
+        <div class="col-md-2">
+          <div class="header text-center d-md-none shadow-sm">
+            <a href="#"
+              ><img
+                src="image/1-removebg-preview.png"
+                alt=""
+                width="70"
+                height="70"
+                class="mx-auto d-block"
+            /></a>
+          </div>
+          <nav
+            class="side_bar d-none d-md-block position-fixed min-vh-100 shadow-sm"
+          >
+            <div class="header my-3">
+              <a href="#"
+                ><img
+                  src="image/1-removebg-preview.png"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="mx-auto d-block"
+              /></a>
+            </div>
+            <ul class="d-block list-unstyled text-decoration-none p-3">
+              <li class="list-item border-bottom border-black p-1 mb-2">
+                <a
+                  href="#dashboard"
+                  class="side_bar_list_a_hb text-decoration-none d-md-flex d-lg-block justify-content-center"
+                  ><i class="fa-solid fa-gauge-high me-2"></i
+                  ><span class="d-md-none d-lg-inline">Dashboard</span>
+                </a>
+              </li>
+              <li class="list-item border-bottom border-black p-1 mb-2">
+                <a
+                  href="#sales"
+                  class="side_bar_list_a_hb text-decoration-none d-md-flex d-lg-block justify-content-center"
+                  ><i class="fa-solid fa-coins me-2"></i
+                  ><span class="d-md-none d-lg-inline">Sales</span>
+                </a>
+              </li>
+              <li class="list-item border-bottom border-black p-1 mb-2">
+                <a
+                  href="#promotions"
+                  class="side_bar_list_a_hb text-decoration-none d-md-flex d-lg-block justify-content-center"
+                  ><i class="fa-solid fa-gift me-2"></i
+                  ><span class="d-md-none d-lg-inline">Promotions</span>
+                </a>
+              </li>
+              <li class="list-item border-bottom border-black p-1 mb-2">
+                <a
+                  href="#rewards"
+                  class="side_bar_list_a_hb text-decoration-none d-md-flex d-lg-block justify-content-center"
+                  ><i class="fa-brands fa-shopify me-2"></i
+                  ><span class="d-md-none d-lg-inline">Rewards</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- side bar end  -->
+
+        <!-- nav bar start -->
+        <div class="col-md-10">
+          <nav
+            class="navbar navbar_hb navbar-expand rounded mt-2 py-3 mx-2 shadow-sm"
+          >
+            <form class="d-none d-md-flex ms-3" role="search">
+              <input
+                class="form-control focus-ring focus-ring-light me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn search_btn_hb btn-outline-dark" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div class="flex-fill"></div>
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <div class="dropstart">
+                    <a
+                      class="nav-link dropdown-toggle nav_link_hb me-md-3"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      ><i class="fa-solid fa-user fa-2xl"></i
+                    ></a>
+                    <ul class="dropdown-menu dropdown-menu-start">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="fa-regular fa-user me-2"></i>Profile</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i class="fa-regular fa-circle-question me-2"></i
+                          >FAQs</a
+                        >
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><i
+                            class="fa-solid fa-arrow-right-from-bracket me-2"
+                          ></i
+                          >Logout</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav_link_hb me-2 me-md-3" href="#"
+                    ><i class="fa-solid fa-gear fa-2xl"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- nav bar end -->
+          <div class="container-fluid">
+            <!-- dashboard start  -->
+            <div class="row flex-column flex-md-row" id="dashboard">
+              <div class="col-12 col-md-6 col-xl-3 mt-3">
+                <div class="card_hb rounded shadow-sm p-3">
+                  <div class="row">
+                    <div class="card-body col-10 px-3">
+                      <p class="card-text">
+                        Total Visitor
+                        <i class="fa-solid fa-arrow-down fa-bounce"></i>
+                      </p>
+                      <h5 class="card-title">4054</h5>
+                      <div class="card-footer">
+                        <small class="text-body-secondary"
+                          >-1% than last week</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-2 p-2">
+                      <i class="fa-solid fa-eye fa-2xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3 mt-3">
+                <div class="card_hb rounded shadow-sm p-3">
+                  <div class="row">
+                    <div class="card-body col-10 px-3">
+                      <p class="card-text">
+                        Order Count <i class="fa-solid fa-arrow-up fa-beat"></i>
+                      </p>
+                      <h5 class="card-title">35420</h5>
+                      <div class="card-footer">
+                        <small class="text-body-secondary"
+                          >+4% than last month</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-2 p-2">
+                      <i class="fa-solid fa-cart-plus fa-2xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3 mt-3">
+                <div class="card_hb rounded shadow-sm p-3">
+                  <div class="row">
+                    <div class="card-body col-10 px-3">
+                      <p class="card-text">
+                        Customer Count
+                        <i class="fa-solid fa-arrow-up fa-beat"></i>
+                      </p>
+                      <h5 class="card-title">57603</h5>
+                      <div class="card-footer">
+                        <small class="text-body-secondary">+2% Customer</small>
+                      </div>
+                    </div>
+                    <div class="col-2 p-2">
+                      <i class="fa-solid fa-users fa-xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3 mt-3">
+                <div class="card_hb rounded shadow-sm p-3">
+                  <div class="row">
+                    <div class="card-body col-10 px-3">
+                      <p class="card-text">
+                        Online Orders
+                        <i class="fa-solid fa-arrow-up fa-beat"></i>
+                      </p>
+                      <h5 class="card-title">7023</h5>
+                      <div class="card-footer">
+                        <small class="text-body-secondary"
+                          >+3% than last month</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-2 p-2">
+                      <i class="fa-solid fa-cart-plus fa-2xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- dashboard end  -->
+
+            <!-- sale start  -->
+            <div class="row flex-column flex-md-row" id="sales">
+              <div class="col-12 col-lg-4 mt-3">
+                <div
+                  class="card_hb rounded shadow-sm p-3"
+                  style="height: 150px"
+                >
+                  <div class="row">
+                    <div class="card-body col-10 px-3">
+                      <p class="card-text">
+                        Last Month Sales
+                        <i class="fa-solid fa-arrow-up fa-beat"></i>
+                      </p>
+                      <h5 class="card-title">$774</h5>
+                      <div class="card-footer">
+                        <small class="text-body-secondary">+2% than June</small>
+                      </div>
+                    </div>
+                    <div class="col-2 p-2">
+                      <i class="fa-solid fa-coins fa-2xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mt-3">
+                <div
+                  class="card_hb rounded shadow-sm p-3"
+                  style="height: 150px"
+                >
+                  <div class="row">
+                    <div class="card-body col-10 px-3">
+                      <p class="card-text">
+                        This Month Sales
+                        <i class="fa-solid fa-arrow-up fa-beat"></i>
+                      </p>
+                      <h5 class="card-title">$1054</h5>
+                      <div class="card-footer">
+                        <small class="text-body-secondary"
+                          >+3% than last month</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-2 p-2">
+                      <i class="fa-solid fa-coins fa-2xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mt-3">
+                <div
+                  class="card_hb rounded shadow-sm p-3"
+                  style="height: 150px"
+                >
+                  <div class="row">
+                    <div class="card-body col-10 px-3">
+                      <p class="card-text">
+                        Total Sales <i class="fa-solid fa-arrow-up fa-beat"></i>
+                      </p>
+                      <h5 class="card-title">$20587</h5>
+                      <div class="card-footer">
+                        <small class="text-body-secondary"
+                          >+3% than expected sale</small
+                        >
+                      </div>
+                    </div>
+                    <div class="col-2 p-2">
+                      <i class="fa-solid fa-coins fa-2xl"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sale end  -->
+
+            <!-- promation start  -->
+            <div class="row flex-column flex-md-row" id="promotions">
+              <div class="col-12 col-lg-6">
+                <!-- promotion data  -->
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="promotion_hb rounded shadow-sm">
+                      <div
+                        class="header text-center pt-3 border-bottom border-black"
+                      >
+                        <h3>
+                          <i class="fa-solid fa-chart-simple"></i> Promotion
+                          Data
+                        </h3>
+                      </div>
+                      <div class="text-center mt-4 pb-3">
+                        Promotion Target
+                        <div
+                          class="progress mx-2"
+                          role="progressbar"
+                          aria-label="Warning example"
+                          aria-valuenow="100"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar progress-bar_hb"
+                            style="width: 100%"
+                          >
+                            100%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center mt-2 pb-3">
+                        Promotion Reach (Individual)
+                        <div
+                          class="progress mx-2"
+                          role="progressbar"
+                          aria-label="Warning example"
+                          aria-valuenow="78"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar progress-bar_hb"
+                            style="width: 78%"
+                          >
+                            78%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center mt-2 pb-3">
+                        Promotion Reach (Online)
+                        <div
+                          class="progress mx-2"
+                          role="progressbar"
+                          aria-label="Warning example"
+                          aria-valuenow="22"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar progress-bar_hb"
+                            style="width: 22%"
+                          >
+                            22%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center mt-2 pb-3">
+                        Promotion Profit
+                        <div
+                          class="progress mx-2"
+                          role="progressbar"
+                          aria-label="Warning example"
+                          aria-valuenow="79"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        >
+                          <div
+                            class="progress-bar progress-bar_hb"
+                            style="width: 79%"
+                          >
+                            79%
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- next promotion  -->
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="promotion_hb rounded shadow-sm">
+                      <div
+                        class="header text-center pt-3 border-bottom border-black"
+                      >
+                        <h3>
+                          <i class="fa-solid fa-circle-info"></i> Next Promotion
+                          Detail
+                        </h3>
+                      </div>
+                      <div class="mt-3 pb-2">
+                        <img
+                          src="image/Frappuccino_cold.jpg"
+                          alt=""
+                          class="d-inline-block ms-3 mb-2 rounded-circle"
+                          width="129"
+                        />
+                        <h5 class="d-inline ms-2">|Frappuccino</h5>
+                        <h5
+                          class="next_promo_text d-block d-md-inline d-lg-block d-xl-inline ms-md-2 ms-lg-0 ms-xl-2 p-3 rounded-5 rounded-top-0"
+                        >
+                          50% Discount
+                        </h5>
+                      </div>
+                      <div class="mt-1 pb-2">
+                        <img
+                          src="image/Croissant.jpg"
+                          alt=""
+                          class="d-inline-block ms-3 mb-2 rounded-circle"
+                          width="129"
+                        />
+                        <h5 class="d-inline ms-2">|Croissant</h5>
+                        <h5
+                          class="next_promo_text d-block d-md-inline d-lg-block d-xl-inline ms-md-2 ms-lg-0 ms-xl-2 p-3 rounded-5 rounded-top-0"
+                        >
+                          Buy 1, Get 1
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- calendar  -->
+              <div class="col-12 col-lg-6 mt-3 d-md-none d-lg-block">
+                <div class="calendar_hb rounded shadow-sm h-100">
+                  <div class="header text-center pt-3" style="height: 12.5%">
+                    <h3 class="fw-bold">
+                      <i class="fa-regular fa-calendar-days me-2"></i>Promotion
+                      Dates
+                    </h3>
+                  </div>
+                  <div
+                    class="month_hb d-flex justify-content-between rounded"
+                    style="height: 12.5%"
+                  >
+                    <i class="fas fa-angle-left fa-2xl prev p-3"></i>
+                    <div class="date text-center my-3">
+                      <h1>August</h1>
+                      <p>No Promotion Today</p>
+                    </div>
+                    <i class="fas fa-angle-right fa-2xl next p-3"></i>
+                  </div>
+                  <div
+                    class="weekdays_hb d-flex justify-content-between mt-2 mt-md-4"
+                  >
+                    <div class="fw-bold fs-5">Sun</div>
+                    <div class="fw-bold fs-5">Mon</div>
+                    <div class="fw-bold fs-5">Tue</div>
+                    <div class="fw-bold fs-5">Wed</div>
+                    <div class="fw-bold fs-5">Thu</div>
+                    <div class="fw-bold fs-5">Fri</div>
+                    <div class="fw-bold fs-5">Sat</div>
+                  </div>
+                  <div
+                    class="days_hb d-flex justify-content-between mt-2 mt-md-4"
+                    style="height: 12.5%"
+                  >
+                    <div class="prev-date fs-5">30</div>
+                    <div class="prev-date fs-5">31</div>
+                    <div class="fs-5">1</div>
+                    <div class="fs-5">2</div>
+                    <div class="fs-5">3</div>
+                    <div class="fs-5">4</div>
+                    <div class="fs-5">5</div>
+                  </div>
+                  <div
+                    class="days_hb d-flex justify-content-between"
+                    style="height: 12.5%"
+                  >
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                  </div>
+                  <div
+                    class="days_hb d-flex justify-content-between"
+                    style="height: 12.5%"
+                  >
+                    <div>13</div>
+                    <div>14</div>
+                    <div>15</div>
+                    <div>16</div>
+                    <div>17</div>
+                    <div>18</div>
+                    <div>19</div>
+                  </div>
+                  <div
+                    class="days_hb d-flex justify-content-between"
+                    style="height: 12.5%"
+                  >
+                    <div class="present_day">20</div>
+                    <div>21</div>
+                    <div>22</div>
+                    <div>23</div>
+                    <div>24</div>
+                    <div>25</div>
+                    <div>26</div>
+                  </div>
+                  <div
+                    class="days_hb d-flex justify-content-between"
+                    style="height: 12.5%"
+                  >
+                    <div>27</div>
+                    <div>28</div>
+                    <div>29</div>
+                    <div>30</div>
+                    <div>31</div>
+                    <div class="next-date">1</div>
+                    <div class="next-date">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- promation end  -->
+
+            <!-- reward start  -->
+            <div class="my-4" id="rewards">
+              <h3
+                class="fw-bold reward_head rounded text-center p-3 g-0"
+                style="width: 100%"
+              >
+                Reward Data
+              </h3>
+              <div class="container-fluid g-0">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">No.</th>
+                      <th scope="col">Account Name</th>
+                      <th scope="col">Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Violet</td>
+                      <td>19/08/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Indigo</td>
+                      <td>10/08/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Blue</td>
+                      <td>04/08/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Green</td>
+                      <td>30/07/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Yellow</td>
+                      <td>23/07/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Orange</td>
+                      <td>14/07/2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Red</td>
+                      <td>06/07/2023</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- reward end  -->
+          </div>
+          <div class="row border-top py-2">
+            <div class="col text-center">
+              <span>&copy; 2023 Heavenly Bliss. All rights reserved.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Login for more rewards ~ Heavenly Bliss Account Page</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -23,20 +27,12 @@
     <!-- navbar start -->
     <nav class="navbar navbar_hb navbar-expand-md shadow-sm sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand ms-3 d-none d-md-block" href="index.html">
+        <a class="navbar-brand ms-3 d-md-block" href="index.html">
           <img
             src="image/1-removebg-preview.png"
             alt="Bootstrap"
             width="70"
             height="70"
-          />
-        </a>
-        <a class="navbar-brand ms-3 d-block d-md-none" href="index.html">
-          <img
-            src="image/HB_Logo2.1.png"
-            alt="Bootstrap"
-            width="100"
-            height="40"
           />
         </a>
         <button
@@ -55,7 +51,7 @@
           <div class="offcanvas-header border border-bottom">
             <a
               class="nav-link nav_link_hb offcanvas-title mt-2 ms-3"
-              href="#"
+              href="account.html"
               id="offcanvasNavbarLabel"
               ><i class="fa-solid fa-circle-user fa-2xl"></i
             ></a>
@@ -88,6 +84,11 @@
                   >ABOUT</a
                 >
               </li>
+              <li class="nav-item d-none d-md-block me-3">
+                <a class="nav-link nav_link_hb" href="account.html"
+                  ><i class="fa-solid fa-circle-user fa-2xl"></i
+                ></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -97,84 +98,188 @@
 
     <!-- content start -->
     <div class="container my-3">
-      <img
-        src="image/HB_Logo2.1.png"
-        class="img-fluid mx-auto d-block"
-        alt=""
-        width="300"
-      />
-      <h2 class="sign_in_header text-center fw-bolder mt-4">
+      <a
+        class="navbar-brand my-3 d-block animate__animated animate__bounce"
+        href="index.html"
+      >
+        <img
+          src="image/HB_Logo2.1.png"
+          alt="Bootstrap"
+          class="mx-auto d-block"
+          width="200"
+          height="70"
+        />
+      </a>
+      <!-- signin session start -->
+      <h2
+        class="sign_in_header text-center fw-bolder mt-4 animate__animated animate__backInRight"
+      >
         Sign In or Create Account
       </h2>
-      <!-- signin session start -->
-      <div class="border-bottom mt-3 pb-5">
-        <div class="upper_div_hb mx-auto border rounded shadow-sm">
-          <div class="inner_div_hb p-5">
-            <form>
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Username or Email address</label>
+      <div class="border-bottom mt-3 pb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-lg-4"></div>
+            <div
+              class="col-12 col-md-6 col-lg-4 upper_div_hb mx-auto border rounded shadow-sm"
+            >
+              <div class="inner_div_hb p-2">
+                <div id="emailHelp" class="form-text mb-1">
+                  We'll never share your email.
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Username or Email</label>
+                </div>
+                <div id="emailHelp" class="form-text mb-1">
+                  Password must be contain uppercase and lowercase letters.
+                </div>
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="my-2 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input form_check_hb"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Keep me signed in.</label
+                  >
+                </div>
+                <div class="forget_psw_hb mb-2">
+                  <a class="forget_psw_hb" href="">Forgot your password?</a>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto my-2 my-md-1">
+                  <button
+                    type="submit"
+                    class="btn sign_in_btn_hb border rounded-pill fw-bold shadow"
+                  >
+                    SIGN IN
+                  </button>
+                </div>
               </div>
-              <div id="emailHelp" class="form-text mb-3">
-                We'll never share your email.
-              </div>
-              <div class="form-floating">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Password"
-                />
-                <label for="floatingPassword">Password</label>
-              </div>
-              <div class="my-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input form_check_hb"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Keep me signed in.</label
-                >
-              </div>
-              <div class="forget_psw_hb mb-3">
-                <a class="forget_psw_hb" href="#">Forgot your password?</a>
-              </div>
-              <button
-                type="submit"
-                class="btn sign_in_btn_hb border rounded-pill fw-bold shadow"
-              >
-                SIGN IN
-              </button>
-            </form>
+            </div>
+            <div class="col-md-3 col-lg-4"></div>
           </div>
         </div>
       </div>
       <!-- signin session end -->
+
       <!-- signup session start -->
-      <div class="border-bottom py-3">
+      <div class="pt-3">
         <div class="text-center">
           <h5 class="rewards_hb fw-bold">JOIN HEAVENLY BLISS REWARDS</h5>
           <p>
             Rewards to earn free food and drinks, get free refills, pay and
             order with your phone, and more.
           </p>
-          <button
-            type="submit"
-            class="btn create_account_btn_hb border rounded-pill fw-bold mt-2 shadow"
-          >
-            CREATE ACCOUNT
-          </button>
+          <div class="d-grid gap-2 col-6 col-md-3 mx-auto">
+            <button
+              type="submit"
+              class="btn create_account_btn_hb border rounded-pill fw-bold mt-2 shadow"
+            >
+              CREATE ACCOUNT
+            </button>
+          </div>
         </div>
       </div>
       <!-- signup session end -->
     </div>
     <!-- content end -->
+
+    <!-- footer start -->
+    <div class="border-top pt-3">
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="footer-header">
+              <h4 class="footer-header-2 fw-bold text-center">
+                Term of Service
+              </h4>
+            </div>
+            <ul class="footer_ul_hb text-center p-0 mt-3">
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Term of Service</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer-header">
+              <h4 class="footer-header-2 fw-bold text-center">
+                Help & Feedback
+              </h4>
+            </div>
+            <ul class="footer_ul_hb text-center p-0 mt-3">
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb"
+                  >Feedback</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none footer_li_hb">FAQs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4 class="footer-header-2 fw-bold text-center">Contact Us</h4>
+            <ul class="contact_ul_hb d-flex justify-content-center mt-4">
+              <li>
+                <a href="" class="contact_li_hb ms-3 me-2"
+                  ><i class="fa-brands fa-facebook fa-2xl"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="contact_li_hb me-2"
+                  ><i class="fa-brands fa-twitter fa-2xl"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="contact_li_hb me-2"
+                  ><i class="fa-brands fa-square-instagram fa-2xl"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" class="contact_li_hb me-5"
+                  ><i class="fa-brands fa-youtube fa-2xl"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="container-fluid">
+      <div class="row border-top py-1">
+        <div class="col text-center">
+          <span>&copy; 2023 Heavenly Bliss. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

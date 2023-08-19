@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cousine", monospace;
+}
+
+/* side_bar */
+.side_bar {
+  background-color: #cee6f3;
+  width: 16%;
+}
+.side_bar_list_a_hb {
+  color: black;
+}
+.side_bar_list_a_hb:hover {
+  color: #6c3428;
+}
+ul.promo_date_hb {
+  color: #cee6f3;
+}
+
+/* navbar */
+.navbar_hb {
+  background-color: #cee6f3;
+}
+.nav_link_hb {
+  color: black;
+}
+.nav_link_hb:hover {
+  color: #6c3428;
+}
+
+/* search  */
+.search_btn_hb:hover {
+  background-color: #6c3428;
+  border-color: #6c3428;
+}
+
+/* dashboard */
+.card_hb {
+  background-color: #cee6f3;
+}
+
+/* promotion calendar */
+.promotion_hb,
+.calendar_hb {
+  background-color: #cee6f3;
+}
+.month_hb {
+  background-color: #6c3428;
+  color: #cee6f3;
+  align-items: center;
+}
+.weekdays_hb div {
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days_hb {
+  width: 100%;
+  padding: 0.2rem;
+}
+.days_hb div {
+  width: calc(40.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days_hb div:hover {
+  background-color: #6c3428;
+  color: #cee6f3;
+  cursor: pointer;
+}
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+.present_day {
+  background-color: black;
+  color: white;
+}
+.present_day:hover {
+  background-color: #6c3428;
+  color: #cee6f3;
+  cursor: pointer;
+}
+
+/* promotion data */
+.progress-bar_hb {
+  background-color: #6c3428;
+}
+.next_promo_text {
+  background-color: #6c3428;
+  color: #cee6f3;
+}
+
+/* reward */
+.reward_head {
+  background-color: #cee6f3;
+  color: #6c3428;
+}
+.table_hb {
+  background-color: #cee6f3;
+}
