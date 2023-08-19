@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Heebo&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cousine", monospace;
+  font-family: "Heebo", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Dosis", sans-serif;
 }
 
 /* side_bar */
@@ -101,8 +108,5 @@ ul.promo_date_hb {
 /* reward */
 .reward_head {
   background-color: #cee6f3;
-  color: #6c3428;
-}
-.table_hb {
-  background-color: #cee6f3;
+  color: black;
 }

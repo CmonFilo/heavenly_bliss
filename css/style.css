@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Heebo&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cousine", monospace;
+  font-family: "Heebo", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Dosis", sans-serif;
 }
 /* navbar */
 .navbar_hb {
@@ -16,11 +23,11 @@
 .nav_link_hb {
   color: black;
 }
-/* .nav_link_hb_menu {
-  border-bottom: 5px solid #6c3428;
-} */
 .nav_link_hb:hover {
   color: #6c3428;
+}
+.offcanvas_hb {
+  background-color: #cee6f3;
 }
 
 /* menu page sub_navbar */
@@ -41,7 +48,7 @@
   background-color: #6c3428;
   border-color: #6c3428;
 }
-.menu_img:hover{
+.menu_img:hover {
   transform: scale(1.05);
 }
 /* account_page */
@@ -71,7 +78,7 @@
 .footer_li_hb {
   color: black;
 }
-
+/* reward page */
 .reward_text_hb {
   align-items: center;
 }

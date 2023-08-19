@@ -7,7 +7,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
       href="image/1-removebg-preview.png"
@@ -22,6 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Heavenly Bliss's Admin Page</title>
   </head>
   <body>
@@ -151,6 +151,8 @@
             </div>
           </nav>
           <!-- nav bar end -->
+
+          <!-- content start -->
           <div class="container-fluid">
             <!-- dashboard start  -->
             <div class="row flex-column flex-md-row" id="dashboard">
@@ -322,7 +324,7 @@
                       <div
                         class="header text-center pt-3 border-bottom border-black"
                       >
-                        <h3>
+                        <h3 class="fw-bold">
                           <i class="fa-solid fa-chart-simple"></i> Promotion
                           Data
                         </h3>
@@ -409,9 +411,9 @@
                       <div
                         class="header text-center pt-3 border-bottom border-black"
                       >
-                        <h3>
+                        <h3 class="fw-bold">
                           <i class="fa-solid fa-circle-info"></i> Next Promotion
-                          Detail
+                          Item
                         </h3>
                       </div>
                       <div class="mt-3 pb-2">
@@ -446,11 +448,11 @@
                   </div>
                 </div>
               </div>
-              <!-- calendar  -->
+              <!-- promotion calendar  -->
               <div class="col-12 col-lg-6 mt-3 d-md-none d-lg-block">
                 <div class="calendar_hb rounded shadow-sm h-100">
                   <div class="header text-center pt-3" style="height: 12.5%">
-                    <h3 class="fw-bold">
+                    <h3 class="fw-bold my-auto">
                       <i class="fa-regular fa-calendar-days me-2"></i>Promotion
                       Dates
                     </h3>
@@ -545,7 +547,7 @@
             <!-- reward start  -->
             <div class="my-4" id="rewards">
               <h3
-                class="fw-bold reward_head rounded text-center p-3 g-0"
+                class="fw-bold reward_head rounded-top text-center p-3 g-0"
                 style="width: 100%"
               >
                 Reward Data
@@ -601,9 +603,12 @@
             </div>
             <!-- reward end  -->
           </div>
-          <div class="row border-top py-2">
-            <div class="col text-center">
-              <span>&copy; 2023 Heavenly Bliss. All rights reserved.</span>
+          <!-- footer -->
+          <div class="container-fluid">
+            <div class="row border-top py-2">
+              <div class="col text-center">
+                <span>&copy; 2023 Heavenly Bliss. All rights reserved.</span>
+              </div>
             </div>
           </div>
         </div>
