@@ -6,41 +6,78 @@
   box-sizing: border-box;
   font-family: "Heebo", sans-serif;
 }
+
+:root {
+  --primary-color: #cee6f3;
+  --secondary-color: black;
+  --third-color: white;
+  --fourth-color: #cee6f3;
+  --body-color: white;
+}
+.dark_mode_hb {
+  --primary-color: black;
+  --secondary-color: #cee6f3;
+  --third-color: black;
+  --fourth-color: #cee6f3;
+  --body-color: rgb(50, 50, 50);
+}
+
+/* dark mode */
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+body {
+  background-color: var(--body-color);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: "Dosis", sans-serif;
+  color: var(--secondary-color);
+}
+
+p,
+i,
+small,
+span,
+.fs-5 {
+  color: var(--secondary-color);
 }
 
 /* side_bar */
 .side_bar {
-  background-color: #cee6f3;
+  background-color: var(--primary-color);
   width: 16%;
 }
 .side_bar_list_a_hb {
-  color: black;
+  color: var(--secondary-color);
 }
 .side_bar_list_a_hb:hover {
   color: #6c3428;
 }
 ul.promo_date_hb {
-  color: #cee6f3;
+  color: var(--primary-color);
 }
 
 /* navbar */
 .navbar_hb {
-  background-color: #cee6f3;
+  background-color: var(--primary-color);
 }
 .nav_link_hb {
-  color: black;
+  color: var(--secondary-color);
 }
 .nav_link_hb:hover {
   color: #6c3428;
 }
 
 /* search  */
+.search_form_hb {
+  background-color: var(--fourth-color);
+}
 .search_btn_hb:hover {
   background-color: #6c3428;
   border-color: #6c3428;
@@ -48,17 +85,19 @@ ul.promo_date_hb {
 
 /* dashboard */
 .card_hb {
-  background-color: #cee6f3;
+  background-color: var(--primary-color);
 }
-
+.progress {
+  color: var(--fourth-color);
+}
 /* promotion calendar */
 .promotion_hb,
 .calendar_hb {
-  background-color: #cee6f3;
+  background-color: var(--primary-color);
 }
 .month_hb {
-  background-color: #6c3428;
-  color: #cee6f3;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
   align-items: center;
 }
 .weekdays_hb div {
@@ -79,7 +118,7 @@ ul.promo_date_hb {
 }
 .days_hb div:hover {
   background-color: #6c3428;
-  color: #cee6f3;
+  color: var(--primary-color);
   cursor: pointer;
 }
 .prev-date,
@@ -87,12 +126,12 @@ ul.promo_date_hb {
   opacity: 0.5;
 }
 .present_day {
-  background-color: black;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
 }
 .present_day:hover {
   background-color: #6c3428;
-  color: #cee6f3;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -102,11 +141,25 @@ ul.promo_date_hb {
 }
 .next_promo_text {
   background-color: #6c3428;
-  color: #cee6f3;
+  color: var(--primary-color);
 }
 
 /* reward */
 .reward_head {
-  background-color: #cee6f3;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+table {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  /* border: 1px solid var(--fourth-color); */
+  text-align: left;
+  padding: 8px;
 }

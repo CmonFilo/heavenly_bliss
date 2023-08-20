@@ -97,7 +97,7 @@
           >
             <form class="d-none d-md-flex ms-3" role="search">
               <input
-                class="form-control focus-ring focus-ring-light me-2"
+                class="form-control search_form_hb focus-ring focus-ring-light me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -107,6 +107,9 @@
               </button>
             </form>
             <div class="flex-fill"></div>
+            <div class="nav-item me-2 me-md-3">
+              <img src="image/moon.png" id="icon" />
+            </div>
             <div>
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -160,15 +163,13 @@
                 <div class="card_hb rounded shadow-sm p-3">
                   <div class="row">
                     <div class="card-body col-10 px-3">
-                      <p class="card-text">
+                      <p>
                         Total Visitor
                         <i class="fa-solid fa-arrow-down fa-bounce"></i>
                       </p>
-                      <h5 class="card-title">4054</h5>
+                      <h5>4054</h5>
                       <div class="card-footer">
-                        <small class="text-body-secondary"
-                          >-1% than last week</small
-                        >
+                        <small>-1% than last week</small>
                       </div>
                     </div>
                     <div class="col-2 p-2">
@@ -184,11 +185,9 @@
                       <p class="card-text">
                         Order Count <i class="fa-solid fa-arrow-up fa-beat"></i>
                       </p>
-                      <h5 class="card-title">35420</h5>
+                      <h5>35420</h5>
                       <div class="card-footer">
-                        <small class="text-body-secondary"
-                          >+4% than last month</small
-                        >
+                        <small>+4% than last month</small>
                       </div>
                     </div>
                     <div class="col-2 p-2">
@@ -205,9 +204,9 @@
                         Customer Count
                         <i class="fa-solid fa-arrow-up fa-beat"></i>
                       </p>
-                      <h5 class="card-title">57603</h5>
+                      <h5>57603</h5>
                       <div class="card-footer">
-                        <small class="text-body-secondary">+2% Customer</small>
+                        <small>+2% Customer</small>
                       </div>
                     </div>
                     <div class="col-2 p-2">
@@ -224,11 +223,9 @@
                         Online Orders
                         <i class="fa-solid fa-arrow-up fa-beat"></i>
                       </p>
-                      <h5 class="card-title">7023</h5>
+                      <h5>7023</h5>
                       <div class="card-footer">
-                        <small class="text-body-secondary"
-                          >+3% than last month</small
-                        >
+                        <small>+3% than last month</small>
                       </div>
                     </div>
                     <div class="col-2 p-2">
@@ -253,9 +250,9 @@
                         Last Month Sales
                         <i class="fa-solid fa-arrow-up fa-beat"></i>
                       </p>
-                      <h5 class="card-title">$774</h5>
+                      <h5>$774</h5>
                       <div class="card-footer">
-                        <small class="text-body-secondary">+2% than June</small>
+                        <small>+2% than June</small>
                       </div>
                     </div>
                     <div class="col-2 p-2">
@@ -275,11 +272,9 @@
                         This Month Sales
                         <i class="fa-solid fa-arrow-up fa-beat"></i>
                       </p>
-                      <h5 class="card-title">$1054</h5>
+                      <h5>$1054</h5>
                       <div class="card-footer">
-                        <small class="text-body-secondary"
-                          >+3% than last month</small
-                        >
+                        <small>+3% than last month</small>
                       </div>
                     </div>
                     <div class="col-2 p-2">
@@ -298,11 +293,9 @@
                       <p class="card-text">
                         Total Sales <i class="fa-solid fa-arrow-up fa-beat"></i>
                       </p>
-                      <h5 class="card-title">$20587</h5>
+                      <h5>$20587</h5>
                       <div class="card-footer">
-                        <small class="text-body-secondary"
-                          >+3% than expected sale</small
-                        >
+                        <small>+3% than expected sale</small>
                       </div>
                     </div>
                     <div class="col-2 p-2">
@@ -330,7 +323,7 @@
                         </h3>
                       </div>
                       <div class="text-center mt-4 pb-3">
-                        Promotion Target
+                        <span>Promotion Target</span>
                         <div
                           class="progress mx-2"
                           role="progressbar"
@@ -348,7 +341,7 @@
                         </div>
                       </div>
                       <div class="text-center mt-2 pb-3">
-                        Promotion Reach (Individual)
+                        <span>Promotion Reach (Individual)</span>
                         <div
                           class="progress mx-2"
                           role="progressbar"
@@ -366,7 +359,7 @@
                         </div>
                       </div>
                       <div class="text-center mt-2 pb-3">
-                        Promotion Reach (Online)
+                        <span>Promotion Reach (Online)</span>
                         <div
                           class="progress mx-2"
                           role="progressbar"
@@ -384,7 +377,7 @@
                         </div>
                       </div>
                       <div class="text-center mt-2 pb-3">
-                        Promotion Profit
+                        <span>Promotion Profit</span>
                         <div
                           class="progress mx-2"
                           role="progressbar"
@@ -452,13 +445,13 @@
               <div class="col-12 col-lg-6 mt-3 d-md-none d-lg-block">
                 <div class="calendar_hb rounded shadow-sm h-100">
                   <div class="header text-center pt-3" style="height: 12.5%">
-                    <h3 class="fw-bold my-auto">
+                    <h3 class="fw-bold my-auto border-bottom border-black pb-2">
                       <i class="fa-regular fa-calendar-days me-2"></i>Promotion
                       Dates
                     </h3>
                   </div>
                   <div
-                    class="month_hb d-flex justify-content-between rounded"
+                    class="month_hb d-flex justify-content-between"
                     style="height: 12.5%"
                   >
                     <i class="fas fa-angle-left fa-2xl prev p-3"></i>
@@ -495,49 +488,49 @@
                     class="days_hb d-flex justify-content-between"
                     style="height: 12.5%"
                   >
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                    <div>10</div>
-                    <div>11</div>
-                    <div>12</div>
+                    <div class="fs-5">6</div>
+                    <div class="fs-5">7</div>
+                    <div class="fs-5">8</div>
+                    <div class="fs-5">9</div>
+                    <div class="fs-5">10</div>
+                    <div class="fs-5">11</div>
+                    <div class="fs-5">12</div>
                   </div>
                   <div
                     class="days_hb d-flex justify-content-between"
                     style="height: 12.5%"
                   >
-                    <div>13</div>
-                    <div>14</div>
-                    <div>15</div>
-                    <div>16</div>
-                    <div>17</div>
-                    <div>18</div>
-                    <div>19</div>
+                    <div class="fs-5">13</div>
+                    <div class="fs-5">14</div>
+                    <div class="fs-5">15</div>
+                    <div class="fs-5">16</div>
+                    <div class="fs-5">17</div>
+                    <div class="fs-5">18</div>
+                    <div class="fs-5">19</div>
                   </div>
                   <div
                     class="days_hb d-flex justify-content-between"
                     style="height: 12.5%"
                   >
                     <div class="present_day">20</div>
-                    <div>21</div>
-                    <div>22</div>
-                    <div>23</div>
-                    <div>24</div>
-                    <div>25</div>
-                    <div>26</div>
+                    <div class="fs-5">21</div>
+                    <div class="fs-5">22</div>
+                    <div class="fs-5">23</div>
+                    <div class="fs-5">24</div>
+                    <div class="fs-5">25</div>
+                    <div class="fs-5">26</div>
                   </div>
                   <div
                     class="days_hb d-flex justify-content-between"
                     style="height: 12.5%"
                   >
-                    <div>27</div>
-                    <div>28</div>
-                    <div>29</div>
-                    <div>30</div>
-                    <div>31</div>
-                    <div class="next-date">1</div>
-                    <div class="next-date">2</div>
+                    <div class="fs-5">27</div>
+                    <div class="fs-5">28</div>
+                    <div class="fs-5">29</div>
+                    <div class="fs-5">30</div>
+                    <div class="fs-5">31</div>
+                    <div class="next-date" class="fs-5">1</div>
+                    <div class="next-date" class="fs-5">2</div>
                   </div>
                 </div>
               </div>
@@ -546,60 +539,53 @@
 
             <!-- reward start  -->
             <div class="my-4" id="rewards">
-              <h3
-                class="fw-bold reward_head rounded-top text-center p-3 g-0"
-                style="width: 100%"
-              >
-                Reward Data
-              </h3>
-              <div class="container-fluid g-0">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th scope="col">No.</th>
-                      <th scope="col">Account Name</th>
-                      <th scope="col">Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Violet</td>
-                      <td>19/08/2023</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Indigo</td>
-                      <td>10/08/2023</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Blue</td>
-                      <td>04/08/2023</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Green</td>
-                      <td>30/07/2023</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>Yellow</td>
-                      <td>23/07/2023</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td>Orange</td>
-                      <td>14/07/2023</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">7</th>
-                      <td>Red</td>
-                      <td>06/07/2023</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <table>
+                <tr>
+                  <th colspan="3">
+                    <h3
+                      class="fw-bold reward_head rounded-top text-center p-3 g-0"
+                      style="width: 100%"
+                    >
+                      Reward Data
+                    </h3>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Name</th>
+                  <th>Account Name</th>
+                  <th>Date</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>18/08/2023</td>
+                </tr>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>05/08/2023</td>
+                </tr>
+                <tr>
+                  <td>Ernst Handel</td>
+                  <td>Roland Mendel</td>
+                  <td>30/07/2023</td>
+                </tr>
+                <tr>
+                  <td>Island Trading</td>
+                  <td>Helen Bennett</td>
+                  <td>22/07/2023</td>
+                </tr>
+                <tr>
+                  <td>Laughing Bacchus Winecellars</td>
+                  <td>Yoshi Tannamuri</td>
+                  <td>20/07/2023</td>
+                </tr>
+                <tr>
+                  <td>Magazzini Alimentari Riuniti</td>
+                  <td>Giovanni Rovelli</td>
+                  <td>17/07/2023</td>
+                </tr>
+              </table>
             </div>
             <!-- reward end  -->
           </div>
