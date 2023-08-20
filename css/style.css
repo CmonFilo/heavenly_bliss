@@ -37,9 +37,11 @@ h5 {
   z-index: 3;
   top: 0px;
 }
-.sub_navlink_hb {
+.sub_navlink_hb,
+.simbolo_link_hb {
   color: black;
 }
+.simbolo_link_hb:hover,
 .sub_navlink_hb:hover {
   color: #6c3428;
 }
