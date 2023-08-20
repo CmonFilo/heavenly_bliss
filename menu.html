@@ -109,12 +109,9 @@
     <!-- navbar end -->
 
     <!-- sub_navbar start -->
-    <nav
-      class="navbar sub_navbar_hb d-none d-md-block sticky-top shadow-sm"
-      id="navbar-example2"
-    >
+    <nav class="navbar sub_navbar_hb sticky-top shadow-sm" id="navbar-example2">
       <div class="container">
-        <ul class="nav nav-underline">
+        <ul class="nav nav-underline d-none d-md-flex">
           <li class="nav-item">
             <a class="nav-link sub_navlink_hb" href="#hot_drinks_hb"
               >Hot Drinks</a
@@ -135,7 +132,18 @@
           </li>
         </ul>
         <!-- search bar -->
-        <form class="d-flex" role="search">
+        <form class="d-none d-md-flex" role="search">
+          <input
+            class="form-control focus-ring focus-ring-light me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn search_btn_hb btn-outline-dark" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <form class="d-flex d-md-none w-100" role="search">
           <input
             class="form-control focus-ring focus-ring-light me-2"
             type="search"
